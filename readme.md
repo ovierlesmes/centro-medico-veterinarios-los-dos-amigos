@@ -1,46 +1,70 @@
-# Sistema de Gestión para Veterinaria
+# 🐾 Sistema de Gestión Veterinaria — Proyecto Fullstack Personal
 
-## 📌 Descripción del Proyecto
-Este proyecto consiste en el desarrollo de una **aplicación web para la gestión de citas** en una **veterinaria**. La aplicación permite a los **usuarios (dueños de mascotas)** agendar, modificar y cancelar citas con los veterinarios, mientras que los **veterinarios** pueden confirmar, cancelar . El sistema está diseñado para ser intuitivo, asegurando una fácil interacción entre los usuarios y los veterinarios.
+Este proyecto fue desarrollado desde cero con enfoque fullstack, aplicando las mejores prácticas en diseño de interfaces, arquitectura backend y gestión de datos. Fue construido con el objetivo de simular un sistema real de gestión para clínicas veterinarias, destacando **autenticación por roles**, **flujo completo de citas**, y **historial médico**.
 
-## 🛠 Objetivos del Proyecto
-El principal objetivo de este proyecto es crear una **herramienta eficiente** que permita la **gestión de citas veterinarias** de manera sencilla y organizada. Para ello, se implementaron las siguientes funcionalidades clave:
+---
 
-- **Usuarios**: Agendar, modificar y cancelar citas.
-- **Veterinarios**: Confirmar y cancelar citas, 
+## 🎯 Objetivo del proyecto
 
-## ⚙️ Tecnologías Utilizadas
-- **Frontend**: React, TypeScript, React Context API
-- **Backend**: Node.js, Express
-- **Base de Datos**: MySQL
-- **Autenticación**: JWT (JSON Web Tokens)
+Diseñar y desarrollar una solución completa que permita gestionar una veterinaria, incluyendo usuarios, mascotas, citas, y notas clínicas. Este proyecto fue pensado para demostrar mi interes y capacidad de:
 
-## 💡 Funcionalidades Implementadas
-1. **Gestión de citas para usuarios**:
-   - Agendar citas seleccionando la fecha, hora y síntomas de la mascota.
-   - Modificar los detalles de una cita ya agendada.
-   - Cancelar citas en cualquier momento.
-  
-2. **Gestión de citas para veterinarios**:
-   - Confirmar citas agendadas por los usuarios.
-   - Cancelar citas en caso de emergencia o cambios en la disponibilidad.
-   - Ver el historial completo de citas para cada paciente.
+- Construir interfaces responsivas y funcionales en React
+- Diseñar APIs REST seguras con Express
+- Modelar relaciones de base de datos reales en MySQL
+- Implementar flujos completos con validaciones, roles y protección JWT
+- Pensar como un desarrollador de producto
 
-## 🔍 Justificación del Proyecto
-Este sistema fue creado con el objetivo de **optimizar el proceso de gestión de citas** en veterinarias. Tradicionalmente, la gestión de citas se realiza de manera manual, lo que puede generar errores humanos, confusión y sobrecarga de trabajo administrativo. Con esta aplicación, se busca mejorar la eficiencia y la experiencia tanto para los usuarios como para los veterinarios, proporcionando una **plataforma accesible** y **fácil de usar**.
+---
 
-Además, al implementarse una base de datos relacional como **MySQL**, se asegura que toda la información de las citas se almacene de manera organizada y segura.
+## 🛠️ Tecnologías utilizadas
 
-## 📚 Documentación y Futuras Mejoras
-El proyecto está en continuo desarrollo y existen planes para agregar más funcionalidades en el futuro, tales como:
-- **Recordatorios de citas** por correo electrónico o notificaciones push.
-- **Sistema de calificación** para que los usuarios puedan evaluar el servicio recibido.
-- **Integración con pagos en línea** para facilitar el pago de las consultas.
+### Frontend
+- ⚛️ React con TypeScript y Vite
+- 🎨 TailwindCSS para diseño responsivo
+- 🔄 Axios para consumo de API
+- 📍 React Router DOM para navegación dinámica
 
-## 👨‍💻 Contribuciones
-Este proyecto fue desarrollado como parte de un curso de formación, y en el futuro, se acepta la colaboración de otros desarrolladores que deseen aportar nuevas funcionalidades o mejoras.
+### Backend
+- 🚀 Node.js + Express
+- 🔐 Autenticación con JSON Web Tokens (JWT)
+- 🗄️ Base de datos MySQL con relaciones reales (JOINs, UUIDs, claves foráneas)
+- 🧱 Arquitectura modular: rutas, controladores, middlewares
 
-Si deseas colaborar o realizar sugerencias, por favor abre un **pull request** o contacta al desarrollador principal.
+---
+
+## 🧠 Capacidades demostradas
+
+✔️ Desarrollo fullstack moderno (frontend + backend)  
+✔️ Gestión de roles y control de acceso  
+✔️ Diseño de base de datos relacional  
+✔️ Flujo completo de agendamiento y confirmación de citas  
+✔️ Implementación de historial médico por mascota  
+✔️ Validación de datos, protección de rutas y seguridad básica  
+✔️ Experiencia real en control de versiones con Git y GitHub  
+
+---
+
+## 🚀 Funcionalidades principales
+
+- Registro e inicio de sesión con control de sesión vía JWT
+- Panel dinámico según el rol: Usuario o Veterinario
+- Agendamiento, confirmación, cancelación y seguimiento de citas
+- Historial médico vinculado por mascota
+- Notas clínicas por parte del veterinario
+- Redirección automática al dashboard correcto
+- Cierre de sesión seguro y controlado
+
+---
+
+## 📦 Instalación local
+
+### Backend (Express + MySQL)
+
+```bash
+cd backend
+npm install
+node server.js
+
 
 ## 📝 Licencia
 Este proyecto está bajo la **licencia MIT**. Puedes modificar y distribuir el código con fines no comerciales.
