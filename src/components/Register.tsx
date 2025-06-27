@@ -32,15 +32,15 @@ const Registro = () => {
   };
 
   return (
-    <div className="p-4 max-w-md mx-auto">
-      <h2 className="text-2xl font-bold mb-4">Registro</h2>
-      <form onSubmit={handleSubmit} className="space-y-4">
+    <div className="registro-wrapper">
+      <h2 className="registro-titulo">Registro usuario📜</h2>
+      <form onSubmit={handleSubmit} className="registro-formulario">
         <input
           type="text"
           placeholder="Nombre"
           value={nombre}
           onChange={(e) => setNombre(e.target.value)}
-          className="w-full p-2 border rounded"
+          className="registro-input"
           required
         />
         <input

@@ -500,7 +500,6 @@ button:hover,
   text-decoration: underline;
 }
 
-
 .volver-inicio {
   margin-top: 0.5rem;
 }
@@ -525,5 +524,74 @@ button:hover,
 
 .icono-mascota:hover {
   transform: scale(1.05);
+}
+
+.registro-wrapper {
+  padding: 1rem;
+  max-width: 400px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.registro-titulo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.registro-formulario {
+  display: flex;
+  height: 310px;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 95%;
+  border: 1px solid #d1d5db;
+  border-radius: 600px;
+  font-size: 1rem;
+}
+
+.botones-wrapper {
+  display: flex;
+  flex-direction: column; /* Uno debajo del otro */
+  align-items: center;    /* Centrado horizontal */
+  gap: 1rem;              /* Espaciado entre botones */
+  margin-bottom: 1.5rem;
+}
+
+/* Estilo base para ambos botones */
+.btn {
+  padding: 0.5rem 1rem;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s ease-in-out;
+  width: 200px; /* Puedes ajustar el ancho para que ambos se vean iguales */
+}
+
+/* Estilo para botón rojo */
+.btn-rojo {
+  background-color: #ef4444;
+}
+
+.btn-rojo:hover {
+  background-color: #dc2626;
+}
+
+/* Estilo para botón azul */
+.btn-azul {
+  background-color: #2563eb;
+}
+
+.btn-azul:hover {
+  background-color: #1d4ed8;
 }
 

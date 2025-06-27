@@ -95,18 +95,13 @@ const PanelUsuario = () => {
         Panel del Usuario
       </h1>
 
-      <div className="flex justify-between flex-wrap gap-4 mb-6">
-        <button
-          onClick={handleLogout}
-          className="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600 transition"
-        >
+      <div className="botones-wrapper">
+        <button onClick={handleLogout} className="btn btn-rojo">
           Cerrar sesión
         </button>
+
         {!formVisible && (
-          <button
-            onClick={() => setFormVisible(true)}
-            className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
-          >
+          <button onClick={() => setFormVisible(true)} className="btn btn-azul">
             Agendar Nueva Cita
           </button>
         )}
