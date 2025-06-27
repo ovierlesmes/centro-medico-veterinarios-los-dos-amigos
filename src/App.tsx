@@ -1,21 +1,66 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import PanelUsuario from './components/PanelUsuario';
-import PanelVeterinario from './components/PanelVeterinario';
-import Navbar from './components/Navbar';
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Login from "./pages/Login";
+import Register from "./components/Register";
+import PanelUsuario from "./components/PanelUsuario";
+import PanelVeterinario from "./components/PanelVeterinario";
+import AdminPanel from "./components/AdminPanel";
+import Historial from "./components/Historial";
+import PrivateRoute from "./components/PrivateRoute";
+import Landing from "./pages/Landing";
 
-const App = () => {
+function App() {
   return (
-    <Router>
-      <Navbar />
-      <main className="app-container">
-        <Routes>
-          <Route path="/" element={<PanelUsuario />} />
-          <Route path="/panel-usuario" element={<PanelUsuario />} />
-          <Route path="/panel-veterinario" element={<PanelVeterinario />} />
-        </Routes>
-      </main>
-    </Router>
+    <BrowserRouter>
+      <Routes>
+        {/* Rutas públicas */}
+        <Route path="/" element={<Landing />} />
+        <Route path="/register" element={<Register />} />
+
+        {/* Panel Usuario (protegido) */}
+        <Route
+          path="/panel/usuario/*"
+          element={
+            <PrivateRoute allowedRoles={["usuario"]}>
+              <PanelUsuario />
+            </PrivateRoute>
+          }
+        />
+
+        {/* Panel Veterinario (protegido) */}
+        <Route
+          path="/panel/veterinario"
+          element={
+            <PrivateRoute allowedRoles={["veterinario"]}>
+              <PanelVeterinario />
+            </PrivateRoute>
+          }
+        />
+
+        <Route
+          path="/panel/admin"
+          element={
+            <PrivateRoute allowedRoles={["admin"]}>
+              <AdminPanel />
+            </PrivateRoute>
+          }
+        />
+
+        {/* Historial Médico (protegido para veterinarios) */}
+        <Route
+          path="/panel/veterinario/historial"
+          element={
+            <PrivateRoute allowedRoles={["veterinario"]}>
+              <Historial />
+            </PrivateRoute>
+          }
+        />
+
+        {/* Redirección para rutas no encontradas */}
+        <Route path="*" element={<Login />} />
+      </Routes>
+    </BrowserRouter>
   );
-};
+}
 
 export default App;

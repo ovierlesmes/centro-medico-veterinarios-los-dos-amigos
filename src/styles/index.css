@@ -1,0 +1,529 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* -------------------- BASE -------------------- */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e3f3fd;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+}
+
+/* ------------------ TIPOGRAFÍA ------------------ */
+h2 {
+  text-align: center;
+  color: #1d4ed8;
+  font-size: 2.25rem;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #2563eb;
+  font-size: 1.75rem;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+@media (max-width: 640px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+}
+
+/* ------------------- LISTAS ------------------- */
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 10px 14px; /* menos padding para aligerar la tarjeta */
+  margin-bottom: 8px; /* espaciado vertical más corto */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  font-size: 20px;
+  line-height: 1.5;
+  transition: transform 0.2s, box-shadow 0.2s;
+  width: 300px;
+  max-width: 200%;
+  justify-content: center;
+}
+
+li:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ------------------ ENCABEZADO ------------------ */
+.encabezado-veterinario-horizontal {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #e3f3fd;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  font-family: "Poppins", sans-serif;
+}
+
+.icono-animales-header {
+  width: 200px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin-left: 20%;
+}
+
+.contenido-texto-header {
+  flex: 1;
+  min-width: 280px;
+  margin-right: 25%;
+}
+
+.contenido-texto-header h1 {
+  color: #000000;
+  margin-bottom: 0.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+
+.contenido-texto-header h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #1d4ed8;
+  margin-bottom: 0.5rem;
+  padding-right: 30px;
+  margin-top: 10px;
+}
+
+.contenido-texto-header p {
+  margin-top: 30px;
+  font-size: 1.2rem;
+  color: #000000;
+  text-align: center;
+  font-weight: 800;
+  padding-inline: 10px;
+  margin-bottom: 20px;
+}
+
+/* ---------------- ICONO GRANDE ---------------- */
+.icono-contacto-grande {
+  width: 350px;
+  height: 350px;
+  background-color: #cce4e8;
+  padding: 6px;
+  object-fit: cover;
+  box-sizing: border-box;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .icono-contacto-grande {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+@media (max-width: 480px) {
+  .icono-contacto-grande {
+    width: 130px;
+    height: 130px;
+  }
+}
+
+/* ------------------ IMÁGENES ------------------ */
+.imagen-veterinario {
+  width: autopx;
+  max-width: 100%;
+  height: autopx;
+  max-height: 70%;
+}
+
+.imagen-nosotros,
+.iconomascotas {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50px;
+  margin-inline: auto;
+}
+
+/* ----------------- FORMULARIOS ----------------- */
+form {
+  background-color: rgba(255, 255, 255, 0.88);
+  padding: 30px;
+  border-radius: 40px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #1e3a8a;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 40px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+/* ------------------- BOTONES ------------------- */
+button,
+.btn {
+  padding: 12px 16px;
+  background-color: #1d4ed8;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover,
+.btn:hover {
+  background-color: #1e40af;
+  transform: translateY(-2px);
+  opacity: 0.95;
+}
+
+.btn {
+  margin: 6px 6px 0 0;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.btn.editar {
+  background-color: #2563eb;
+}
+
+.btn.cancelar {
+  background-color: #dc2626;
+}
+
+/* ------------------- ALERTAS ------------------- */
+.alert {
+  color: white;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.alert-success {
+  background-color: #4caf50;
+}
+
+.alert-error {
+  background-color: #f44336;
+}
+
+.alert-warning {
+  background-color: #ff9800;
+}
+
+/* ----------- GRID RESPONSIVO ----------- */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.grid-item {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ------------ MÓDULO MASCOTA ------------ */
+.crear-mascota {
+  margin: 20px 0;
+}
+
+.campos-nueva-mascota {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* ------------ SECCIÓN NOSOTROS ------------ */
+#nosotros {
+  background-color: #ffffff;
+  max-width: 72rem;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.opiniones {
+  background-color: #cce4e8;
+  color: #333;
+  font-weight: 900;
+  font-size: 22px;
+  border-radius: 1rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin: 2rem auto;
+  max-width: 700px;
+}
+
+/* ------- TARJETAS DE SERVICIOS ------- */
+.service-card-1,
+.service-card-2,
+.service-card-3 {
+  width: 100%;
+  max-width: 280px;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+  margin: 1rem auto;
+  font-size: 27px;
+  font-weight: 900;
+}
+
+.service-card-1:hover,
+.service-card-2:hover,
+.service-card-3:hover {
+  transform: scale(1.05);
+}
+
+.service-card-1 img,
+.service-card-2 img,
+.service-card-3 img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  margin-top: 0.5rem;
+}
+
+/* ----------- SECCIÓN CONTACTO ----------- */
+.seccion-contacto {
+  background-color: #cce4e8;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.contenedor-contacto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .contenedor-contacto {
+    flex-direction: row;
+    gap: 50px;
+  }
+}
+
+.contenido-contacto {
+  text-align: center;
+}
+
+.contenido-contacto h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a202c;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.contenido-contacto button {
+  width: 60%;
+  background-color: #1d4ed8;
+  padding: 16px;
+  font-size: 1rem;
+  border-radius: 50px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 5px;
+}
+
+.contenido-contacto button:hover {
+  background-color: #001167;
+}
+
+/* ------------------- FOOTER ------------------- */
+.footer {
+  padding: 2rem 1rem;
+  background-color: #fff;
+  border-top: 1px solid #e2e8f0;
+}
+
+.footer-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .footer-info-container {
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    gap: 25%;
+  }
+
+  .titulo-siguenos {
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #1d4ed8;
+  }
+
+  .siguenos-section {
+    margin-top: -1.5rem;
+    margin-left: -9rem;
+  }
+}
+
+.iconos-siguenos img,
+.iconos-siguenos svg {
+  width: 75px;
+  height: 75px;
+}
+
+.bloque-contacto-footer {
+  max-width: 500px;
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+  color: #4b5563;
+  padding: 1rem 0;
+}
+
+.bloque-contacto-footer h3 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #1d4ed8;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.bloque-contacto-footer p {
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.texto-copyright {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #000000;
+  margin-top: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.login-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom right, #dbeafe, #f0f9ff);
+  padding: 1rem;
+  width: 40%;
+  max-width: 100%;
+  height: 10%;
+  max-height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.login-card {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  max-width: 360px;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.login-card:hover {
+  transform: translateY(-2px);
+}
+.texto-registro {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.enlace-registro {
+  color: #021258; /* verde */
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+
+.volver-inicio {
+  margin-top: 0.5rem;
+}
+
+.enlace-volver {
+  color: #1d4ed8; /* azul */
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.enlace-volver:hover {
+  color: #1e40af;
+}
+
+.icono-mascota {
+  width: 50%;
+  height: auto;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+  border-radius: 500px;
+}
+
+.icono-mascota:hover {
+  transform: scale(1.05);
+}
+
