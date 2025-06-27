@@ -54,6 +54,37 @@ Diseñar y desarrollar una solución completa que permita gestionar una veterina
 - Redirección automática al dashboard correcto
 - Cierre de sesión seguro y controlado
 
+- ## 🖼️ Capturas de pantalla
+
+### 🏠 Pantallas de inicio
+
+![Inicio 1](./src/assets/screenshots/inicio_1.jpg)
+![Inicio 2](./src/assets/screenshots/inicio_2.jpg)
+![Inicio 3](./src/assets/screenshots/inicio_3.jpg)
+![Inicio 4](./src/assets/screenshots/inicio_4.jpg)
+![Inicio 5](./src/assets/screenshots/inicio_5.jpg)
+![Inicio 6](./src/assets/screenshots/inicio_6.jpg)
+![Inicio 7](./src/assets/screenshots/inicio_7.jpg)
+
+### 🔐 Login y administración
+
+![Login 1](./src/assets/screenshots/login_1.jpg)
+![Login 2](./src/assets/screenshots/login_2.jpg)
+![Admin 1](./src/assets/screenshots/admin_1.jpg)
+
+### 👤 Módulo de usuario
+
+![Usuario 1](./src/assets/screenshots/usuario_1.jpg)
+![Usuario 2](./src/assets/screenshots/usuario_2.jpg)
+![Usuario 3](./src/assets/screenshots/usuario_3.jpg)
+![Usuario 4](./src/assets/screenshots/usuario_4.jpg)
+
+### 🧑‍⚕️ Módulo del veterinario
+
+![Veterinario 1](./src/assets/screenshots/veterinario_1.jpg)
+![Veterinario 2](./src/assets/screenshots/veterinario_2.jpg)
+![Veterinario 3](./src/assets/screenshots/veterinario_3.jpg)
+
 ---
 
 ## 📦 Instalación local
