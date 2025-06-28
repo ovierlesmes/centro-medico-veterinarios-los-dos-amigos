@@ -113,7 +113,7 @@ Este proyecto contiene un archivo SQL ubicado en la carpeta `/db` con la estruct
 
 ## 🚀 Instrucciones de Importación
 
-Antes de comenzar, asegúrate de haber creado una base de datos vacía.
+Antes de comenzar, asegúrese de haber creado una base de datos vacía.
 
 ### Opción 1: Línea de comandos
 
