@@ -96,6 +96,30 @@ cd backend
 npm install
 node server.js
 
+# 🐾 Despliegue de Base de Datos - Centro Médico Veterinario
+
+
+Este proyecto contiene un archivo SQL ubicado en la carpeta `/db` con la estructura completa de la base de datos necesaria para levantar el sistema veterinario.
+
+---
+
+## 🗂 Estructura del archivo
+
+📄 **Archivo:** `db/init.sql`  
+🧱 Contenido: Definición de tablas, claves primarias, relaciones y restricciones.  
+🔒 No incluye datos sensibles ni registros precargados.
+
+---
+
+## 🚀 Instrucciones de Importación
+
+Antes de comenzar, asegúrate de haber creado una base de datos vacía.
+
+### Opción 1: Línea de comandos
+
+```bash
+mysql -u TU_USUARIO -p TU_BASE_DE_DATOS < db/init.sql
+
 
 ## 📝 Licencia
 Este proyecto está bajo la **licencia MIT**. Puedes modificar y distribuir el código con fines no comerciales.
