@@ -47,7 +47,7 @@ Diseñar y desarrollar una solución completa que permita gestionar una veterina
 ## 🚀 Funcionalidades principales
 
 - Registro e inicio de sesión con control de sesión vía JWT
-- Panel dinámico según el rol: Usuario o Veterinario
+- Panel dinámico según el rol: Usuario,Veterinario y admin
 - Agendamiento, confirmación, cancelación y seguimiento de citas
 - Historial médico vinculado por mascota
 - Notas clínicas por parte del veterinario
